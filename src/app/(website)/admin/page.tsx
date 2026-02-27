@@ -53,8 +53,8 @@ export default function AdminDashboard() {
     const quickStats = [
         { icon: FileText, label: "Tổng bài viết", value: posts.length, change: "+2 tuần này", color: "#c8a45c" },
         { icon: FolderOpen, label: "Tổng dự án", value: projects.length, change: "+1 tháng này", color: "#60a5fa" },
-        { icon: ImageIcon, label: "Hình ảnh", value: images.length, change: null, color: "#a78bfa" },
-        { icon: Eye, label: "Đã đăng", value: publishedPosts + projects.filter(p => p.status === "published").length, change: null, color: "#34d399" },
+        { icon: ImageIcon, label: "Hình ảnh", value: images.length, change: undefined, color: "#a78bfa" },
+        { icon: Eye, label: "Đã đăng", value: publishedPosts + projects.filter(p => p.status === "published").length, change: undefined, color: "#34d399" },
     ];
 
     return (
@@ -191,3 +191,4 @@ export default function AdminDashboard() {
         </div>
     );
 }
+
